@@ -1,0 +1,7 @@
+1. porque el valor que estamos imprimiendo es el identificador del proceso. Como sabemos que los procesos es código ejecutandose, el valor cambia porque es un nuevo proceso.
+
+2. Se muestran dos valores distintos, porque un valor es el del proceso que llama al "hello world" y el otro es el de "hello world"
+
+3. Por que el fork crea dos procesos iguales una copia de el mismo.
+
+4. INIT: es el ultimo paso en el proceso de booteo. Es responsable de iniciar procesos de sistema.

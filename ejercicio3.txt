@@ -1,0 +1,3 @@
+1. Hemos modificado la interfaz de llamadas de sistema. Ya que la api sigue siendo la misma, solo que ahora cuenta con mas llamadas. 
+2. Debido a que no cambiamos la API de c++, pero en los casos de READ y OPEN c++ provee una llamada que nos permite llamarlas por nombre.
+3. Por que la api de c++, o sus header (librerias) nos permiten acceder a estas llamadas de sistema con una capa de abstraccion.

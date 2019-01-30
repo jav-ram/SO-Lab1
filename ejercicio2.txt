@@ -1,0 +1,12 @@
+1. 
+	open(): es usado para abrir nuevos archivos y obtener la descripción
+	close(): es usado para cerrar un descriptor de archivo.
+	read(): lee los nbytes de un archivo asociado a el descriptor de archivos del archivo abierto, dentro de un buffer.
+	write(): es usada para escribir data desde un buffer de memoria.
+
+2. strace
+  * execve es una llamada de sistema que ejecuta un archivo, en este caso el ejecutable que creo gcc.
+  * Las llamadas de sistema que usando open devuelve un int que es el descriptor del archivo. Las llamadas que sean read o write es la cantida de bytes que fueron leidos o escritos. Y los close regresan 0 que es un valor que nos dice que se cerraron exitosamente.
+  * Entre mis llamadas de sistema no hay ningun "read" vacio.
+  * Hay varios "open"s y "read"s de librerías. "stat" que le dan información sobre un archivo, desde tamaño hasta extensión. "access" para checkear permisos de una archivo del usuario actual.
+
